@@ -16,7 +16,7 @@ post.uninformed = BernBeta( priorBetaAB=c(1,1) , Data=c(rep(1,6),rep(0,3)) ,show
 source("DBDA2E-utilities.R") # Load definitions of graphics functions etc.
 source("BernBeta.R") # Load the definition of the BernBeta function
 #To get the mean from the prior data
-kappa.example = mean(c(rep(1,5), rep(0,5))); kappa.example
+kappa.example = mean(c(rep(1,4), rep(0,6))); kappa.example
 #To get the shape values
 betaABfromMeanKappa( mean=kappa.example, kappa=10)
 #To run the actual analysis
