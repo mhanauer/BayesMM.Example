@@ -24,10 +24,10 @@ openGraph()
 post.informed = BernBeta( priorBetaAB=c(5,5) , Data=c(rep(1,4),rep(0,6)) ,showHDI=TRUE , showCentTend="Mode")
 openGraph()
 post.uninformed = BernBeta( priorBetaAB=c(1,1) , Data=c(rep(1,6),rep(0,3)) ,showHDI=TRUE , showCentTend="Mode")
-#Calculating the difference in HDI's between informed and uninformed
-lower.diff = abs(52.1-41.2); lower.diff  
-upper.diff = abs(89.7-90.7); upper.diff
-total.diff = lower.diff + upper.diff; total.diff
+# Calculating the difference in HDI's between informed and uninformed
+lower.diff = abs(90.7-41.2); lower.diff  
+upper.diff = abs(92.2-56.4); upper.diff
+total.diff = lower.diff - upper.diff; total.diff
 # This is for the informed prior to demonstrate the it is not a problem 
 post.informed = BernBeta( priorBetaAB=c(1,1) , Data=c(rep(1,2),rep(0,8)) ,showHDI=TRUE , showCentTend="Mode")
 
